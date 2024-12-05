@@ -227,10 +227,41 @@
 
 
 
+
+<head>
+<style>
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible grid */
+    gap: 10px; /* Space between images */
+    margin: 20px auto;
+    max-width: 90%; /* Limit the gallery width */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images are visually consistent */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+</head>
+  
+
   <!-- Full View: Mek -->
   <div class="full-view" id="pet-view">
     <h2>My Pet Photos</h2>
     <figure style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+      <div class="gallery">
     <img src="mek.jpg" alt="shasha" style="width:210px; height:290px; border-radius: 10px;">
     <img src="mek 2.jpg" alt="shasha" style="width:200px; height:280px; border-radius: 10px;">
      <img src="mek 1.jpg" alt="shasha" style="width:210px; height:290px; border-radius: 10px;">
@@ -265,6 +296,7 @@
   <div class="full-view" id="favourite-view">
     <h2>My Favourite Photos</h2>
     <figure style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+      <div class="gallery">
      <img src="roommate.jpg" alt="shasha" style="width:200px; height:310px; border-radius: 10px;">
     <img src="school.jpg" alt="shasha" style="width:200px; height:290px; border-radius: 10px;">
     <img src="groupmate.jpg" alt="shasha" style="width:260px; height:200px; border-radius: 10px;">
@@ -294,6 +326,7 @@
   <div class="full-view" id="hobbies-view">
     <h2>Hobby Photos</h2>
     <figure style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+      <div class="gallery">
     <img src="nyanyi.jpg" alt="shasha" style="width:230px; height:290px; border-radius: 10px;">
     <img src="nyanyii.jpg" alt="shasha" style="width:260px; height:140px; border-radius: 10px;">
     <img src="nyanyi lgii.jpg" alt="shasha" style="width:260px; height:200px; border-radius: 10px;">
@@ -312,6 +345,7 @@
 <div class="full-view" id="Artists-view">
     <h2>Favorite Artists Photos</h2>
     <figure style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+      <div class="gallery">
     <img src="chang wook 2.jpg" alt="shasha" style="width:240px; height:300px; border-radius: 10px;">
     <img src="chang wook 3.jpg" alt="shasha" style="width:220px; height:290px; border-radius: 10px;">
     <img src="chang wook 1.jpg" alt="shasha" style="width:180px; height:290px; border-radius: 10px;">
